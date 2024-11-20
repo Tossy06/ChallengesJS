@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/Rock-Paper-Scissors/style.css">
 </head>
 <body>
-    
+    <div class="content">
+        <div class="game-content", id="game-content">
+            <header class="header-content"><h1>Rock-Paper-Scissors</h1></header>
+            <div class="battle-area">
+                <div class="player-attack" id="player-attack">
+                    <button id="player-selection"><img src="/Rock-Paper-Scissors/img/papel.png" alt=""></button>
+                    <p>YOU</p>
+                    <P id="score-player">SCORE:</P>
+                </div>
+                <div class="text-vs">
+                    <p>VS</p>
+                </div>
+                <div class="machine-attack" id="machine-attack">
+                    <button id="machine-selection"><img src="/Rock-Paper-Scissors/img/piedra.png" alt=""></button>
+                    <p>MACHINE</p>
+                    <P id="score_machine">SCORE:</P>
+                </div>
+            </div>
+            <div class="player-choice">
+                <button class="buttons-attack" id="rock"><img src="/Rock-Paper-Scissors/img/piedra.png" alt=""></button>
+                <button class="buttons-attack" id="paper"><img src="/Rock-Paper-Scissors/img/papel.png" alt=""></button>
+                <button class="buttons-attack" id="scissors"><img src="/Rock-Paper-Scissors/img/tijeras.png" alt=""></button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="/Rock-Paper-Scissors/rock-paper-scissors.js"></script>
 </body>
 </html>

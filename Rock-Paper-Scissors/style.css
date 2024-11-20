@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lacquer&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fjalla One", sans-serif;
+   
+}
+:root {
+    --primary-color: #01a080;
+    --secondary-color: #fad504;
+    --dark-color: black;
+    --light-color: white;
+}
+
+
+.content{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.game-content{
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    gap: 20vh;
+    padding: 20px;
+    width: 75vh;
+    height: auto;
+    color: white;
+}
+.game-content .header-content{
+    background-color: rgb(221, 217, 217);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.game-content .machine-attack{
+    text-align: center;
+}
+.game-content .player-attack{
+    text-align: center;
+}
+
+.player-attack, .machine-attack{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+
+
+.battle-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    gap: 15vh;
+    padding: 15px;
+    border-radius: 20px;
+}
+.battle-area .text-vs{
+    font-size: 40px;
+}
+
+
+.battle-area button{
+    border: none;
+    border-radius: 45px;
+    padding: 10px;
+    align-items: center;
+}
+
+
+.battle-area img{
+    width: 50px;
+    height: auto;
+}
+.player-choice{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(112, 25, 25); 
+    width: 100%;
+    gap: 15vh;
+    padding: 10px;
+
+}
+.player-choice img{
+    width: 40px;
+    height: auto;
+}
+.player-choice button{
+    padding: 10px;
+    border-radius: 45px;
+    border: none;
+}
+.player-choice button:hover {
+    background-color: #d3d3d3; /* Cambia a un color más claro */
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .game-content {
+        width: 90%;
+        gap: 10vh;
+    }
+    .battle-area {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
